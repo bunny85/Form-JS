@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+	<head>
+		<title>Form Validation-Javascript</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href = "CSS/style.css" rel="stylesheet" >
+	</head>
+	<body>
+		<div class = "container">
+		<div id="form">
+			<p id="head"></p>
+			<h2>JavaScript Form Validation</h2>
+			<form onsubmit='return formValidation()'>
+				<label>Full Name:</label>
+				<input id='firstname' type='text' autofocus>
+				<p id="p1"></p>
+				<label>Username(6-8 characters):</label>
+				<input id='username' type='text'>
+				<p id="p2"></p>
+				<label>Email:</label>
+				<input id='email' type='text'>
+				<p id="p3"></p>
+				<label>State:</label>
+				<select id='state'>
+				<option>
+				Please Choose
+				</option>
+				<option>
+				America
+				</option>
+				<option>
+				Australia
+				</option>
+				<option>
+				Sweden
+				</option>
+				<option>
+				Africa
+				</option>
+				</select>
+				<p id="p4"></p>
+				<label>Address:</label>
+				<input id='addr' type='text'>
+				<p id="p5"></p>
+				<label>Zip Code:</label>
+				<input id='zip' type='text'>
+				<div id = "form_error"></div>
+				<p id="p6"></p>
+				<input id="submit" type='submit' value='Check Form'>
+				<!--div id = "form_error"></div-->
+			</form>			
+		</div>
+		</div>
+		<script src="JS/script.js"></script>
+	</body>
+</html>
